@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Tabela de classificação</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html>
+
+<head>
+  <title>
+    Imersão Dev - Aula 06
+  </title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="bg"></div>
+  <div class="bg bg2"></div>
+  <div class="bg bg3"></div>
+  <h1>Quem será o vencedor?</h1>
+  </p>
+  <div class="adicionar">
+    <input type="text" id="nomeJogador" placeholder="Insira o nome do jogador">
+    <button onClick="adicionarJogador()" class="btn-adicionar">adicionar jogador</button>
+    <button onClick="limparPontos()" class="btn-limpar-pontos">limpar pontos</button>
+    <button onClick="limparJogadores()" class="btn-limpar-jogadores">limpar jogadores</button>
+  </div>
+
+  <table style="width:100%">
+    <thead>
+      <tr>
+        <th>Nome</th>
+        <th>Vitórias</th>
+        <th>Empates</th>
+        <th>Derrotas</th>
+        <th>Pontos</th>
+        <th colspan="4">Ações</th>
+      </tr>
+    </thead>
+    <tbody id="tabelaJogadores">
+      <!--       <tr>
+        <td>Paulo</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><button onClick="adicionarVitoria()">Vitória</button></td>
+        <td><button onClick="adicionarEmpate()">Empate</button></td>
+        <td><button onClick="adicionarDerrota()">Derrota</button></td>
+      </tr>
+      <tr>
+        <td>Rafa</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><button onClick="adicionarVitoria()">Vitória</button></td>
+        <td><button onClick="adicionarEmpate()">Empate</button></td>
+        <td><button onClick="adicionarDerrota()">Derrota</button></td>
+      </tr>
+    </tbody> -->
+  </table>
+  <div class="regras">
+    <p>Regras:</p>
+    <p>Vitória = 3 pontos</p>
+    <p>Empate = 1 ponto</p>
+    <p>Derrota = 0 ponto</p>
+  </div>
+  <img src="https://static.wikia.nocookie.net/jacksepticeye/images/a/ac/Uno_logo.png/" alt="" class="uno-logo">
+</body>
+
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>

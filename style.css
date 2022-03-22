@@ -1,0 +1,165 @@
+* {
+  text-align: center;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  min-height: 400px;
+  background-image: url("");
+  background-color: #111;
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.bg {
+  animation: slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, #111 50%, #00e15f 50%);
+  bottom: 0;
+  left: -50%;
+  opacity: 0.5;
+  position: fixed;
+  right: -50%;
+  top: 0;
+  z-index: -1;
+}
+
+.bg2 {
+  animation-direction: alternate-reverse;
+  animation-duration: 4s;
+}
+
+.bg3 {
+  animation-duration: 5s;
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+  height: 100vh;
+}
+
+.page-title {
+  color: #ffffff;
+  margin: 0 0 5px;
+}
+
+.page-subtitle {
+  color: #ffffff;
+  margin-top: 5px;
+}
+
+table {
+  border: 2px solid white;
+  border-collapse: collapse;
+}
+
+h1 {
+  color: white;
+  font-weight: 800;
+  letter-spacing: 3px;
+  font-size: 40px;
+}
+
+th,
+tr,
+td {
+  border: solid 1px white;
+  color: white;
+  letter-spacing: 1px;
+}
+
+.adicionar {
+  margin-bottom: 30px;
+}
+
+input {
+  padding: 10px 40px;
+  font-family: "Poppins", sans-serif;
+  border-radius: 4px;
+}
+
+button {
+  font-weight: 800;
+  margin-bottom: 7px;
+  margin-top: 7px;
+  border: none;
+}
+
+button:hover {
+  border: white 2px solid;
+  background-color: #111;
+  transition: all 0.5s;
+  cursor: pointer;
+  color: white;
+  border-radius: 3px;
+}
+
+.btn-adicionar {
+  padding: 10px 20px;
+  border-radius: 4px;
+  border: #009000 2px solid;
+  background-color: #009000;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  margin-right: 7px;
+  margin-left: 7px;
+}
+
+.btn-limpar-pontos,
+.btn-limpar-jogadores {
+  padding: 10px 20px;
+  border-radius: 4px;
+  border: #ff4a40 2px solid;
+  background-color: #ff4a40;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  margin-right: 7px;
+}
+
+.btn-vitoria {
+  background-color: #4082ff;
+  border-radius: 3px;
+  color: white;
+  border: #4082ff 2px solid;
+}
+
+.btn-empate {
+  background-color: #ffa05e;
+  border-radius: 3px;
+  color: white;
+  border: #ffa05e 2px solid;
+}
+
+.btn-derrota {
+  background-color: #ff5050;
+  border-radius: 3px;
+  color: white;
+  border: #ff5050 2px solid;
+}
+
+.uno-logo {
+  width: 200px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+@media (max-width: 560px) {
+  .uno-logo {
+    width: 50px;
+    text-align: center;
+  }
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(-25%);
+  }
+  100% {
+    transform: translateX(25%);
+  }
+}
+
+.regras {
+  color: white;
+}
